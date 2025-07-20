@@ -9,7 +9,7 @@
     </td>
   </tr>
 </table>
-
+<h1>Meet the Team</h1>
 ## Meet the Team
 
 ## Motivation
