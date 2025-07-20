@@ -10,9 +10,13 @@
   </tr>
 </table>
 
+## Meet the Team
+
 ## Motivation
 
 ## Project Description
+
+## Results
 
 ## Background Material
 
