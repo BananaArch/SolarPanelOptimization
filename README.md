@@ -18,10 +18,11 @@ Solar power is one of the cheapest and fastest-growing energy sources in the wor
 ## Project Description
 The goal of this project is to obtain the maximum energy production, balancing the aspect ratio as well as incidence angle to maximize energy return.
 
-*talk about equation and show plots here*
+
 
 ## Results
 
+*talk about equation and show plots here*
 
 ## Background Material
 
