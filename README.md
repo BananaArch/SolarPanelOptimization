@@ -13,13 +13,19 @@
 
 
 ## Motivation
+Solar power is one of the cheapest and fastest-growing energy sources in the world, offering a clean and sustainable alternative to fossil fuels. However, the efficiency of solar panels is highly dependent on their orientation relative to the sun. Fixed-position panels often miss out on optimal sunlight throughout the day, leading to energy losses. 
 
 ## Project Description
 
+
 ## Results
+
 
 ## Background Material
 
+
 ## Impact
 
+
 ## Expertise Gained 
+Throughout this project, we learned how to use MATLAB and Simullink to design an optimization algorithm for maximizing the energy gained via solar power.
