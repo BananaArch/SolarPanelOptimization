@@ -16,7 +16,9 @@
 Solar power is one of the cheapest and fastest-growing energy sources in the world, offering a clean and sustainable alternative to fossil fuels. However, the efficiency of solar panels is highly dependent on their orientation relative to the sun. Fixed-position panels often miss out on optimal sunlight throughout the day, leading to energy losses. 
 
 ## Project Description
+The goal of this project is to obtain the maximum energy production, balancing the aspect ratio as well as incidence angle to maximize energy return.
 
+*talk about equation and show plots here*
 
 ## Results
 
