@@ -29,6 +29,7 @@
     </td>
   </tr>
 </table>
+*Although our team initially consisted of four members, two had to leave the project partway through, so the remaining two of us completed the entire project.*
 
 ## Motivation
 Solar power is one of the cheapest and fastest-growing energy sources in the world, offering a clean and sustainable alternative to fossil fuels. However, the efficiency of solar panels is highly dependent on their orientation relative to the sun. Solar panels are most efficient when they are completely perpendicular to the sun. Fixed-position panels often miss out on optimal sunlight throughout the day, leading to energy losses. Increase in energy production leads to a higher return on investment, which makes solar panels more economical, leading to higher adoption and lower carbon emissions. Enhancing the energy efficiency of solar panels reduces the need for additional panels and land, thereby lessening human environmental impact and helping to combat climate change. 
@@ -126,7 +127,6 @@ While our current model is useful for analyzing a specific case, its results don
 
 ## Impact
 
-
 This project shows how we can use simple math and coding to make better decisions when designing solar panels. Instead of guessing what angle or shape works best, we used a model to test many options and find the one that gives the most energy.
 
 Even though the setup is simplified, the approach can be applied to real-world problems. Engineers, researchers, or anyone working with solar energy can use this kind of optimization to:
@@ -137,6 +137,5 @@ Even though the setup is simplified, the approach can be applied to real-world p
 
 By using tools like MATLAB, we were able to turn a real question — *“What tilt and shape gives the most power?”* — into something we could solve with code. This helps build skills that are useful in renewable energy, electrical engineering, and beyond.
 
-
 ## Expertise Gained 
-Throughout this project, we learned how to use MATLAB and Simullink to design an optimization algorithm for maximizing the energy gained via solar power.
+Before this project, Kyle knew nothing about MATLAB, Simulink, or Simscape. Tito knew introductory MATLAB from his college course, but did not know how to use its optimization features. Throughout this project, the two of us had to learn how to use MATLAB, Simulink, and Simscape to design an optimization algorithm. 
