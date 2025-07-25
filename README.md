@@ -49,9 +49,9 @@ This project used MATLAB to find the best tilt angle and shape (aspect ratio) fo
 
 The results show that the most energy is produced when:
 
-- **Tilt Angle** is around **39.8 degrees**
-- **Aspect Ratio** is about **1.2**
-- **Maximum Energy Output** is **1895.3 units**
+- **Tilt Angle** is around **37.50 degrees**
+- **Aspect Ratio** is about **1**
+- **Maximum Energy Output** is **1965.93 units**
 
 Below are two 3D graphs generated from the code that help visualize these results:
 
