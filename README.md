@@ -139,3 +139,6 @@ By using tools like MATLAB, we were able to turn a real question — *“What ti
 
 ## Expertise Gained 
 Before this project, Kyle knew nothing about MATLAB, Simulink, or Simscape. Tito knew introductory MATLAB from his college course, but did not know how to use its optimization features. Throughout this project, the two of us had to learn how to use MATLAB, Simulink, and Simscape to design an optimization algorithm. 
+
+## Resources Used
+*credits*, *works cited*
