@@ -116,6 +116,14 @@ This project helped us practice:
 - Using `optimproblem` and `fcn2optimexpr` in MATLAB
 - Visualizing results with `surf` and `plot3`
 
+## Limitations of our Model
+
+A key limitation of our model is its static design. It calculates energy output for a single point in time, rather than for a realistic duration like a full day. The model is based on the assumption that the sun is fixed at a 45° angle above the horizon. This condition is represented by the sunlight intensity function, $\text{sunIntensity}(\theta)=1000\cdot\cos(\theta−45^\circ)$, which means the maximum amount of sunlight is captured only when the panel's tilt angle, θ, is also 45°. At this angle, the panel's surface is perfectly perpendicular to the sun's rays.
+
+As a result, our findings for the optimal tilt angle and aspect ratio are only valid for that specific moment. In practice, the sun’s position in the sky is not fixed; it changes continuously throughout the day and varies significantly with the seasons. 
+
+While our current model is useful for analyzing a specific case, its results don't show the best setup for maximizing energy collection over a whole day or year. This is where we can make upgrades to our simple fixed-angle solar panel. Instead of using one fixed angle for a given estimate of the sun angle, a tracker's software would continuously calculate the sun's real-time position. It would then adjust the panel's tilt and orientation to always remain perpendicular to the sun's rays, maximizing sunlight capture from sunrise to sunset.
+
 ## Impact
 
 
