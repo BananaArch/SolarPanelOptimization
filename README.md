@@ -17,8 +17,8 @@
       <img src="images/tito.jpg"  alt="Tito Romero" width="120" height="160" style="border-radius: 8px;" /><br />
       <strong>Tito Romero</strong><br />
       CSULA Electrical Engineering<br />
-      Explorirng MATLAB &amp; MathWorks tools like optimization.<br />
-      Excited to learn and solve real problems.My goal is to understand the connections between engineering and coding. MathWorks is helping bridge that gap and guide future engineers.
+      Explorring MATLAB &amp; MathWorks tools like optimization.<br />
+      Excited to learn and solve real problems. My goal is to understand the connections between engineering and coding. MathWorks is helping bridge that gap and guide future engineers.
     </td>
     <td align="center" valign="top" width="400" style="font-family: Arial, sans-serif; font-size: 14px; padding: 10px;">
       <img src="https://your-image-url.com/partner.jpg" alt="Partner Name" width="120" height="120" style="border-radius: 8px;" /><br />
@@ -31,7 +31,7 @@
 </table>
 
 ## Motivation
-Solar power is one of the cheapest and fastest-growing energy sources in the world, offering a clean and sustainable alternative to fossil fuels. However, the efficiency of solar panels is highly dependent on their orientation relative to the sun. Fixed-position panels often miss out on optimal sunlight throughout the day, leading to energy losses. 
+Solar power is one of the cheapest and fastest-growing energy sources in the world, offering a clean and sustainable alternative to fossil fuels. However, the efficiency of solar panels is highly dependent on their orientation relative to the sun. Solar panels are most efficient when they are completely perpendicular to the sun. Fixed-position panels often miss out on optimal sunlight throughout the day, leading to energy losses. Increase in energy production leads to a higher return on investment, which makes solar panels more economical, leading to higher adoption and lower carbon emissions. Enhancing the energy efficiency of solar panels reduces the need for additional panels and land, thereby lessening human environmental impact and helping to combat climate change. 
 
 ## Project Description
 The goal of this project is to obtain the maximum energy production, balancing the aspect ratio as well as incidence angle to maximize energy return.
