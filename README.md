@@ -31,7 +31,7 @@
 </table>
 *Although our team initially consisted of four members, two had to leave the project partway through, so the remaining two of us completed the entire project.*
 
-# Motivation
+## Motivation
 Solar power is one of the cheapest and fastest-growing energy sources in the world, offering a clean and sustainable alternative to fossil fuels. However, the efficiency of solar panels is highly dependent on their orientation relative to the sun. Solar panels are most efficient when they are completely perpendicular to the sun. Fixed-position panels often miss out on optimal sunlight throughout the day, leading to energy losses. Increase in energy production leads to a higher return on investment, which makes solar panels more economical, leading to higher adoption and lower carbon emissions. Enhancing the energy efficiency of solar panels reduces the need for additional panels and land, thereby lessening human environmental impact and helping to combat climate change. 
 
 # Fixed-Tilt Solar Panel Optimization
@@ -137,7 +137,7 @@ To address the limitations of the fixed-angle solar panel system, we designed a 
 
 The core of the design is a two-axis, closed-loop control system. Each axis has its own PID controller to manage the panel's orientation. This system controls both the yaw (azimuth) and pitch (elevation) axes to precisely follow the sun's trajectory throughout the day. 
 
-INSERT IMAGE HERE
+<img src="images/simulink model.png" alt="Simulink Model" width="500"/>
 
 We first find where the yaw and pitch angles should be by using a Solar Position Algorithm (SPA) to calculate the sun's real-time coordinates for a specific geographic location, and a specific time. We found a SPA algorithm written in Matlab from the Matlab File Exchange website[^2], and after modifying the code to make it compatible to be used within our Simulink program, we set the geographic location to Los Angeles, CA since we both reside there. For the time, we chose July 25, 2025, since this is the due date for our project. The design is highly adaptable; the solar tracking algorithm can be configured for any geographic location by changing the latitude and longitude coordinates, and for any point in time, including future dates.
 
@@ -147,7 +147,7 @@ INSERT IMAGE OF CONTROL LOOP HERE
 
 ### Accessing our Model
 
-# Impact
+## Impact
 
 This project shows how we can use simple math and coding to make better decisions when designing solar panels. Instead of guessing what angle or shape works best, we used a model to test many options and find the one that gives the most energy.
 
