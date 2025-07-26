@@ -42,7 +42,7 @@ The goal of this project is to obtain the maximum energy production, balancing t
 - **Tilt Angle ($\theta$)** which is the angle between the panel and the ground, and can only be from 0 degrees to 90 degrees
 - **Aspect Ratio ($r$)** which is the ratio of the panel's width and length, which is constrained from 0.5 to 4.0
 
-Our objective was to use MATLAB® to find the values of $\theta$ and $r$ to maximize the energy generation under the above constraints.
+Our objective was to use MATLAB to find the values of $\theta$ and $r$ to maximize the energy generation under the above constraints.
 
 
 ## Results
@@ -137,13 +137,24 @@ To address the limitations of the fixed-angle solar panel system, we designed a 
 
 The core of the design is a two-axis, closed-loop control system. Each axis has its own PID controller to manage the panel's orientation. This system controls both the yaw (azimuth) and pitch (elevation) axes to precisely follow the sun's trajectory throughout the day. 
 
-<img src="images/simulink model.png" alt="Simulink Model" width="500"/>
+<p align="center">
+  <img src="images/simulink model.png" alt="Simulink Model" width="1500" />
+</p>
 
 We first find where the yaw and pitch angles should be by using a Solar Position Algorithm (SPA) to calculate the sun's real-time coordinates for a specific geographic location, and a specific time. We found a SPA algorithm written in MATLAB from the MATLAB File Exchange website[^2], and after modifying the code to make it compatible to be used within our Simulink program, we set the geographic location to Los Angeles, CA since we both reside there. For the time, we chose July 25, 2025, since this is the due date for our project. The design is highly adaptable; the solar tracking algorithm can be configured for any geographic location by changing the latitude and longitude coordinates, and for any point in time, including future dates.
 
 After we found where the yaw and pitch angles should be, we found where the yaw and pitch angles actually are. To do this, we used a Transform Sensor to obtain the Euler Angles of the solar panel. After we obtained the actual yaw and pitch, we fed it into our PID control system. Each controller continuously compares the target angle with the panel's actual measured angle and commands a DC motor to adjust the panel's orientation, thereby minimizing the error and ensuring the panel faces the sun directly. By using a control loop, we ensure that the panel continuously aligns itself with the sun’s position, maximizing solar energy capture throughout the entire day, unlike our previous model.
 
-INSERT IMAGE OF CONTROL LOOP HERE
+<table>
+  <tr>
+    <td>
+      <img src="images/Yaw PID.png" alt="Yaw PID Control Loop" width="500"/>
+    </td>
+    <td>
+      <img src="images/Pitch PID.png" alt="Pitch PID Control Loop" width="500"/>
+    </td>
+  </tr>
+</table>
 
 ### Accessing our Model
 
