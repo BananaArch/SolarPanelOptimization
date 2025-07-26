@@ -16,7 +16,7 @@
     <td align="center" valign="top" width="400" style="font-family: Arial, sans-serif; font-size: 14px; padding: 10px;">
       <img src="images/tito.jpg"  alt="Tito Romero" width="120" height="160" style="border-radius: 8px;" /><br />
       <strong>Tito Romero</strong><br />
-      CSULA Electrical Engineering<br />
+      CSULA Electrical Engineering<br /> <br />
       Exploring MATLAB &amp; MathWorks tools like optimization.<br />
       Excited to learn and solve real problems. My goal is to understand the connections between engineering and coding. MathWorks is helping bridge that gap and guide future engineers.
     </td>
