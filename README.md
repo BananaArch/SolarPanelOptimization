@@ -153,7 +153,7 @@ We first find where the yaw and pitch angles should be by using a Solar Position
 
 After we found where the yaw and pitch angles should be, we found where the yaw and pitch angles actually are. To do this, we used a Transform Sensor to obtain the Euler Angles of the solar panel. After we obtained the actual yaw and pitch, we fed it into our PID control system. Each controller continuously compares the target angle with the panel's actual measured angle and commands a DC motor to adjust the panel's orientation, thereby minimizing the error and ensuring the panel faces the sun directly. By using a control loop, we ensure that the panel continuously aligns itself with the sun’s position, maximizing solar energy capture throughout the entire day, unlike our previous model.
 
-As you can see below, the actual yaw and pitch angles continuously adjust to align with the target angles because of our control loop.
+As you can see below, the actual yaw and pitch angles continuously adjust to align with the target angles because of our control loop. ***Note***: Each second of simulation time (on the x-axis) span one real-life minute, so the graphs span 0–720 minutes (12 hours).
 
 <table>
   <tr>
@@ -166,7 +166,7 @@ As you can see below, the actual yaw and pitch angles continuously adjust to ali
   </tr>
 </table>
 
-Talk about video here...
+You can access a 24-second sped up video of the Simulink animation of the solar panels moving and tracking the sun by clicking [here](https://example.com). You can also access the animation by viewing the file `src/variable tilt/example.avi`. I highly recommend you take less than 30 seconds to watch the video.
 
 ### Accessing our Variable Tilt Model
 
@@ -199,8 +199,6 @@ We used many public resources to learn about different features in MATLAB. Some 
 - **Optimization Onramp Course**[^5] – Taught us how to use `optimproblem` and `fcn2optimexpr` in MATLAB.
 - **Simulink Onramp**[^6] – Taught us how to use Simulink to build, simulate, and visualize dynamic systems using block diagrams.
 - **Simscape Onramp**[^7] – Taught us how to model physical systems using Simscape blocks.
-
-
 
 ## References
 
