@@ -153,7 +153,7 @@ We first find where the yaw and pitch angles should be by using a Solar Position
 
 After we found where the yaw and pitch angles should be, we found where the yaw and pitch angles actually are. To do this, we used a Transform Sensor to obtain the Euler Angles of the solar panel. After we obtained the actual yaw and pitch, we fed it into our PID control system. Each controller continuously compares the target angle with the panel's actual measured angle and commands a DC motor to adjust the panel's orientation, thereby minimizing the error and ensuring the panel faces the sun directly. By using a control loop, we ensure that the panel continuously aligns itself with the sun’s position, maximizing solar energy capture throughout the entire day, unlike our previous model.
 
-As you can see below, the actual yaw and pitch angles continuously adjust to align with the target angles because of our control loop. ***Note***: Each second of simulation time (on the x-axis) span one real-life minute, so the graphs span 0–720 minutes (12 hours).
+As you can see below, the actual yaw and pitch angles continuously adjust to align with the target angles because of our control loop. ***Note***: Each second of simulation time (on the x-axis) span one real-life minute, so the graphs span 0–720 minutes (12 hours). The y-axis represents the angle in radians.
 
 <table>
   <tr>
