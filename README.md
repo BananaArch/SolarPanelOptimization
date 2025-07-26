@@ -36,6 +36,8 @@
 
 Solar power is one of the cheapest and fastest-growing energy sources in the world, offering a clean and sustainable alternative to fossil fuels. However, the efficiency of solar panels is highly dependent on their orientation relative to the sun. Solar panels are most efficient when they are completely perpendicular to the sun. Fixed-position panels often miss out on optimal sunlight throughout the day, leading to energy losses. Increase in energy production leads to a higher return on investment, which makes solar panels more economical, leading to higher adoption and lower carbon emissions. Enhancing the energy efficiency of solar panels reduces the need for additional panels and land, thereby lessening human environmental impact and helping to combat climate change.
 
+---
+
 # Fixed-Tilt Solar Panel Optimization
 
 ## Project Description
@@ -123,7 +125,7 @@ This project helped us practice:
 - Using `optimproblem` and `fcn2optimexpr` in MATLAB
 - Visualizing results with `surf` and `plot3`
 
-### Accessing our Model
+### Accessing our Fixed Tilt Model
 
 To access the fixed tilt model from GitHub, clone the repository to your local machine using `git clone`. Then, navigate to the `src/fixed tilt/` directory and run the live script by opening and executing `SolarPanelOptimization.mlx` with MATLAB.
 
@@ -134,6 +136,8 @@ A key limitation of our model is its static design. It calculates energy output 
 As a result, our findings for the optimal tilt angle and aspect ratio are only valid for that specific moment. In practice, the sun’s position in the sky is not fixed; it changes continuously throughout the day and varies significantly with the seasons.
 
 While our current model is useful for analyzing a specific case, its results don't show the best setup for maximizing energy collection over a whole day or year. This is where we can make upgrades to our simple fixed-angle solar panel. Instead of using one fixed angle for a given estimate of the sun angle, a tracker's software would continuously calculate the sun's real-time position. It would then adjust the panel's tilt and orientation to always remain perpendicular to the sun's rays, maximizing sunlight capture from sunrise to sunset.
+
+---
 
 # Two-Axis Variable Tilt Solar Panel Optimization
 
@@ -175,11 +179,13 @@ As you can see below, the actual yaw and pitch angles continuously adjust to ali
 
 Talk about video here...
 
-### Accessing our Model
+### Accessing our Variable Tilt Model
 
 To access the variable tilt model from GitHub, clone the repository to your local machine using `git clone`. Then, navigate to the `src/variable tilt/` directory and run the simulink model by opening and executing `WormAndGearConstraint.slx` with MATLAB. Make sure that the other files and folders: `WormAndGearConstraintSupport/` and `WormAndGearConstraintLibrary.slx` are in the same directory. Run the model, access the scopes, and watch the animation play.
 
 *Warning: The model may take awhile (~5 minutes) to compile and finish*
+
+---
 
 ## Impact
 
@@ -197,7 +203,15 @@ By using tools like MATLAB, we were able to turn a real question — _“What ti
 
 Before this project, Kyle knew nothing about MATLAB, Simulink, Simscape, or control systems. Tito knew introductory MATLAB from his college course but did not know how to use its optimization features. Throughout this project, the two of us had to learn how to use MATLAB, Simulink, Simscape, and control systems tools to design an optimization algorithm.
 
-We used many public resources to learn about different features in MATLAB. All of the resources we used to learn are listed below in the references section.
+We used many public resources to learn about different features in MATLAB. Some of the resources we used are the following:
+
+- **Getting Started With Simulink For Controls**[^3] – Taught how control systems work and introduced the basics of using the PID Controller.
+- **MATLAB Onramp Course**[^4] – Gave us the basics of using MATLAB.
+- **Optimization Onramp Course**[^5] – Taught us how to use `optimproblem` and `fcn2optimexpr` in MATLAB.
+- **Simulink Onramp**[^6] – Taught us how to use Simulink to build, simulate, and visualize dynamic systems using block diagrams.
+- **Simscape Onramp**[^7] – Taught us how to model physical systems using Simscape blocks.
+
+
 
 ## References
 
