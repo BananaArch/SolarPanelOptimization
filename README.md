@@ -29,6 +29,7 @@
     </td>
   </tr>
 </table>
+
 *Although our team initially consisted of four members, two had to leave the project partway through, so the remaining two of us completed the entire project.*
 
 ## Motivation
@@ -124,6 +125,8 @@ This project helped us practice:
 
 ### Accessing our Model
 
+To access the fixed tilt model from GitHub, clone the repository to your local machine using `git clone`. Then, navigate to the `src/fixed tilt/` directory and run the live script by opening and executing `SolarPanelOptimization.mlx` with MATLAB.
+
 ## Limitations of our Model
 
 A key limitation of our model is its static design. It calculates energy output for a single point in time, rather than for a realistic duration like a full day. The model is based on the assumption that the sun is fixed at a 45° angle above the horizon. This condition is represented by the sunlight intensity function, $\text{sunIntensity}(\theta)=1000\cdot\cos(\theta−45^\circ)$, which means the maximum amount of sunlight is captured only when the panel's tilt angle, θ, is also 45°. At this angle, the panel's surface is perfectly perpendicular to the sun's rays.
@@ -174,6 +177,10 @@ Talk about video here...
 
 ### Accessing our Model
 
+To access the variable tilt model from GitHub, clone the repository to your local machine using `git clone`. Then, navigate to the `src/variable tilt/` directory and run the simulink model by opening and executing `WormAndGearConstraint.slx` with MATLAB. Make sure that the other files and folders: `WormAndGearConstraintSupport/` and `WormAndGearConstraintLibrary.slx` are in the same directory. Run the model, access the scopes, and watch the animation play.
+
+*Warning: The model may take awhile (~5 minutes) to compile and finish*
+
 ## Impact
 
 This project shows how we can use simple math and coding to make better decisions when designing solar panels. Instead of guessing what angle or shape works best, we used a model to test many options and find the one that gives the most energy.
@@ -181,20 +188,22 @@ This project shows how we can use simple math and coding to make better decision
 Even though the setup is simplified, the approach can be applied to real-world problems. Engineers, researchers, or anyone working with solar energy can use this kind of optimization to:
 
 - Improve solar panel design for different locations
-- Adjust panels to match seasonal sunlight changes
-- Maximize energy for a limited space (like rooftops or portable devices)
+- Adjust panels to match seasonal sunlight changes and changes based on time
+- Maximize energy for a limited space (like rooftops, portable devices, or solar farms)
 
 By using tools like MATLAB, we were able to turn a real question — _“What tilt and shape gives the most power?”_ — into something we could solve with code. This helps build skills that are useful in renewable energy, electrical engineering, and beyond.
 
 ## Expertise Gained
 
-Before this project, Kyle knew nothing about MATLAB, Simulink, or Simscape. Tito knew introductory MATLAB from his college course, but did not know how to use its optimization features. Throughout this project, the two of us had to learn how to use MATLAB, Simulink, and Simscape to design an optimization algorithm.
+Before this project, Kyle knew nothing about MATLAB, Simulink, Simscape, or control systems. Tito knew introductory MATLAB from his college course but did not know how to use its optimization features. Throughout this project, the two of us had to learn how to use MATLAB, Simulink, Simscape, and control systems tools to design an optimization algorithm.
+
+We used many public resources to learn about different features in MATLAB. All of the resources we used to learn are listed below in the references section.
 
 ## References
 
 [^1]: [Using the Worm and Gear Constraint Block - Solar Tracker (MathWorks)](https://www.mathworks.com/help/sm/ug/using-the-worm-and-gear-constraint-block-solar-tracker.html)
 [^2]: [Sun Position Algorithm (MATLAB File Exchange)](https://www.mathworks.com/MATLABcentral/fileexchange/83453-sun-position-algorithm)
-[^3]: [Solar Tracker Simulation – YouTube Video](https://youtu.be/bE179wgm164?si=ShW5vBovNb8edCdt)
+[^3]: [Getting Started With Simulink for Controls – MathWorks YouTube Video](https://youtu.be/bE179wgm164?si=ShW5vBovNb8edCdt)
 [^4]: [MATLAB Onramp Course (MathWorks Academy)](https://MATLABacademy.mathworks.com/details/MATLAB-onramp/gettingstarted)
 [^5]: [Optimization Onramp Course (MathWorks Academy)](https://MATLABacademy.mathworks.com/details/optimization-onramp/optim)
 [^6]: [Simulink Onramp Course (MathWorks Academy)](https://MATLABacademy.mathworks.com/details/simulink-onramp/simulink)
