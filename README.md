@@ -166,7 +166,9 @@ As you can see below, the actual yaw and pitch angles continuously adjust to ali
   </tr>
 </table>
 
-You can access a 24-second sped up video of the Simulink animation of the solar panels moving and tracking the sun by clicking [here](https://youtu.be/o6d3eHBPEgY). You can also access the animation by viewing the file `SolarPanelSimulation.mp4`. I highly recommend you take 24 seconds to watch the video.
+### Animation of Simulation
+
+You can access a 24-second sped up video of the Simulink animation of the solar panels moving and tracking the sun by clicking [here](https://youtu.be/o6d3eHBPEgY). You can also access the animation by viewing the file `SolarPanelSimulation.mp4`. I ***highly*** recommend you take 24 seconds to watch the video.
 
 ### Accessing our Variable Tilt Model
 
