@@ -30,7 +30,7 @@
   </tr>
 </table>
 
-*Although our team initially consisted of four members, two had to leave the project partway through, so the remaining two of us completed the entire project.*
+*Although our team originally had four members, two left early on and contributed little to the project, leaving the remaining two of us to take on all the work. It was challenging, but we pushed through and completed the entire project ourselves.*
 
 ## Motivation
 
@@ -152,17 +152,6 @@ The core of the design is a two-axis, closed-loop control system. Each axis has 
 We first find where the yaw and pitch angles should be by using a Solar Position Algorithm (SPA) to calculate the sun's real-time coordinates for a specific geographic location, and a specific time. We found a SPA algorithm written in MATLAB from the MATLAB File Exchange website[^2], and after modifying the code to make it compatible to be used within our Simulink program, we set the geographic location to Los Angeles, CA since we both reside there. For the time, we chose July 25, 2025 since this is the due date for our project. For the time, we chose to model from 8:00 AM - 8:00 PM, since this is slightly after sunrise right until sunset. The design is highly adaptable; the solar tracking algorithm can be configured for any geographic location by changing the latitude and longitude coordinates, and for any point in time, including future dates.
 
 After we found where the yaw and pitch angles should be, we found where the yaw and pitch angles actually are. To do this, we used a Transform Sensor to obtain the Euler Angles of the solar panel. After we obtained the actual yaw and pitch, we fed it into our PID control system. Each controller continuously compares the target angle with the panel's actual measured angle and commands a DC motor to adjust the panel's orientation, thereby minimizing the error and ensuring the panel faces the sun directly. By using a control loop, we ensure that the panel continuously aligns itself with the sun’s position, maximizing solar energy capture throughout the entire day, unlike our previous model.
-
-<table>
-  <tr>
-    <td>
-      <img src="images/Yaw PID.png" alt="Yaw PID Control Loop" width="500"/>
-    </td>
-    <td>
-      <img src="images/Pitch PID.png" alt="Pitch PID Control Loop" width="500"/>
-    </td>
-  </tr>
-</table>
 
 As you can see below, the actual yaw and pitch angles continuously adjust to align with the target angles because of our control loop.
 
