@@ -23,9 +23,9 @@
     <td align="center" valign="top" width="400" style="font-family: Arial, sans-serif; font-size: 14px; padding: 10px;">
       <img src="images/kyle.jpeg"  alt="Tito Romero" width="120" height="160" style="border-radius: 8px;" /><br />
       <strong>Kyle Shibao</strong><br />
-      UC Berkeley Electrical Engineering<br />
-      Love creating circuits. New to MATLAB.<br />
-      Passionate about using technology to improve people's lives. I'm grateful to be part of this program.
+      UC Berkeley Electrical Engineering<br /> <br />
+      Love creating and tinkering with circuits. New to MATLAB.<br />
+      Passionate about using technology to improve people's lives. I'm grateful to be part of this program and learn how to use MATLAB and the suite of software it provides to help me achieve my goals.
     </td>
   </tr>
 </table>
@@ -139,7 +139,7 @@ The core of the design is a two-axis, closed-loop control system. Each axis has 
 
 <img src="images/simulink model.png" alt="Simulink Model" width="500"/>
 
-We first find where the yaw and pitch angles should be by using a Solar Position Algorithm (SPA) to calculate the sun's real-time coordinates for a specific geographic location, and a specific time. We found a SPA algorithm written in Matlab from the Matlab File Exchange website[^2], and after modifying the code to make it compatible to be used within our Simulink program, we set the geographic location to Los Angeles, CA since we both reside there. For the time, we chose July 25, 2025, since this is the due date for our project. The design is highly adaptable; the solar tracking algorithm can be configured for any geographic location by changing the latitude and longitude coordinates, and for any point in time, including future dates.
+We first find where the yaw and pitch angles should be by using a Solar Position Algorithm (SPA) to calculate the sun's real-time coordinates for a specific geographic location, and a specific time. We found a SPA algorithm written in MATLAB from the MATLAB File Exchange website[^2], and after modifying the code to make it compatible to be used within our Simulink program, we set the geographic location to Los Angeles, CA since we both reside there. For the time, we chose July 25, 2025, since this is the due date for our project. The design is highly adaptable; the solar tracking algorithm can be configured for any geographic location by changing the latitude and longitude coordinates, and for any point in time, including future dates.
 
 After we found where the yaw and pitch angles should be, we found where the yaw and pitch angles actually are. To do this, we used a Transform Sensor to obtain the Euler Angles of the solar panel. After we obtained the actual yaw and pitch, we fed it into our PID control system. Each controller continuously compares the target angle with the panel's actual measured angle and commands a DC motor to adjust the panel's orientation, thereby minimizing the error and ensuring the panel faces the sun directly. By using a control loop, we ensure that the panel continuously aligns itself with the sun’s position, maximizing solar energy capture throughout the entire day, unlike our previous model.
 
@@ -165,9 +165,9 @@ Before this project, Kyle knew nothing about MATLAB, Simulink, or Simscape. Tito
 ## References
 
 [^1]: [Using the Worm and Gear Constraint Block - Solar Tracker (MathWorks)](https://www.mathworks.com/help/sm/ug/using-the-worm-and-gear-constraint-block-solar-tracker.html)  
-[^2]: [Sun Position Algorithm (MATLAB File Exchange)](https://www.mathworks.com/matlabcentral/fileexchange/83453-sun-position-algorithm)  
+[^2]: [Sun Position Algorithm (MATLAB File Exchange)](https://www.mathworks.com/MATLABcentral/fileexchange/83453-sun-position-algorithm)  
 [^3]: [Solar Tracker Simulation – YouTube Video](https://youtu.be/bE179wgm164?si=ShW5vBovNb8edCdt)  
-[^4]: [MATLAB Onramp Course (MathWorks Academy)](https://matlabacademy.mathworks.com/details/matlab-onramp/gettingstarted)  
-[^5]: [Optimization Onramp Course (MathWorks Academy)](https://matlabacademy.mathworks.com/details/optimization-onramp/optim)  
-[^6]: [Simulink Onramp Course (MathWorks Academy)](https://matlabacademy.mathworks.com/details/simulink-onramp/simulink)  
-[^7]: [Simscape Onramp Course (MathWorks Academy)](https://matlabacademy.mathworks.com/details/simscape-onramp/simscape)
+[^4]: [MATLAB Onramp Course (MathWorks Academy)](https://MATLABacademy.mathworks.com/details/MATLAB-onramp/gettingstarted)  
+[^5]: [Optimization Onramp Course (MathWorks Academy)](https://MATLABacademy.mathworks.com/details/optimization-onramp/optim)  
+[^6]: [Simulink Onramp Course (MathWorks Academy)](https://MATLABacademy.mathworks.com/details/simulink-onramp/simulink)  
+[^7]: [Simscape Onramp Course (MathWorks Academy)](https://MATLABacademy.mathworks.com/details/simscape-onramp/simscape)
