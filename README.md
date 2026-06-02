@@ -24,13 +24,17 @@
       <img src="images/kyle.jpeg"  alt="Tito Romero" width="120" height="160" style="border-radius: 8px;" /><br />
       <strong>Kyle Shibao</strong><br />
       UC Berkeley Electrical Engineering<br /> <br />
-      Love creating and tinkering with circuits. New to MATLAB.<br />
-      Passionate about using technology to improve people's lives. I'm grateful to be part of this program and learn how to use MATLAB and the suite of software it provides to help me achieve my goals.
+      Love tinkering with circuits. New to MATLAB.<br />
+      I'm grateful to be part of this program and learn how to use MATLAB and the suite of software it provides to solve problems.
     </td>
   </tr>
 </table>
 
 *Although our team originally had four members, two left early on and contributed little to the project, leaving the remaining two of us to take on all the work. It was challenging, but we pushed through and completed the entire project ourselves.*
+
+## Acknowledgments
+
+Throughout this project, we used AI language models as a writing and organizational aid. They helped us edit our explanations, structure the documentation, and provided general pointers on MATLAB, Simulink, and optimization concepts. However, we built the models, ran the simulations, analyzed the data, and verified all the final results ourselves.
 
 ## Motivation
 
